@@ -17,7 +17,7 @@ export default function spriteThumbs(player, options) {
 
   const dom = videojs.dom || videojs;
   const controls = player.controlBar;
-  const progress = controls.progressControl;
+  const progress = controls.progressControl || controls.ProgressControl;
   const seekBar = progress.seekBar;
   const mouseTimeDisplay = seekBar.mouseTimeDisplay;
 
